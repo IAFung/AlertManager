@@ -3,54 +3,144 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0357C3596382C54BE77C998C21ABDF9F /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
-		276DEEF0DC5CE9D19A6C75E4261058AE /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0284E6DC5B99FE381D69641A97227DDF /* NSObject+TFPopupMethodExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F059CC93EBAA9AA863ADBE76480BF2 /* NSObject+TFPopupMethodExchange.m */; };
+		09847024AE86D7B5834112F15091208D /* UIScrollView+TFPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 3950E57638DD457E29C1E0ADCD9F159C /* UIScrollView+TFPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		122C9322447D0148CCCE2AB41B832747 /* LEEAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF9277AC66B5981D7F20EDBC36E3EF0 /* LEEAlert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22650B3B51AED997CF617DAD09B9C002 /* TFPopupLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1EA8C57E47EC8D2A8A159478310EBD /* TFPopupLoading.m */; };
+		37584CE3C6A8138D045C5D5C624268C6 /* TFPopup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B00129950C110FF5E37F5A872C6D2181 /* TFPopup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38C03330C7AF8AEFB76CFC8B0276CBF8 /* UIScrollView+TFPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560AAA25BE4BD8DF0CEE85A188B19C3 /* UIScrollView+TFPopup.m */; };
+		49C630A4CCDA4E3A78157BE4C7B0C6E3 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */; };
 		5AB02790F79D0807BC1FE7DC9CBE495D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8BC8482CA2BD34891C179729388A4787 /* SwiftPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA18B2A65C133CC65E227B45AA92FFD9 /* SwiftPriorityQueue.swift */; };
-		9CC3FCD22676CF1453D722C98B42335F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9F40969D326750621620D8548D86467A /* SwiftPriorityQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E73EB03CAD6905AC5E19F5DAFDC9A7EF /* SwiftPriorityQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B8EEC012E40C2069F4AAB130CC04DD09 /* SwiftPriorityQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A2FD0F4D63B208321A694036B73D3D /* SwiftPriorityQueue-dummy.m */; };
+		68DDB27DBEC64B374745C6E9867E7921 /* LEEAlert-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 268797D0A05BA3A3EE3A33FDA6E93030 /* LEEAlert-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A512FCB6B790A1D17F513CA96CDF0B6 /* LEEAlertHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 126D2F0B1C83502479DF3957BAA2FEB2 /* LEEAlertHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B6FBBE56654E511D493C802E0B4245A /* UIView+TFPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D76077C557DEEFBB6B1953B4FF2EB4 /* UIView+TFPopup.m */; };
+		805F52CB727CDD64497668770A5E32F5 /* TFPopupToast.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C53B64C49905E4256A027EC09AD58 /* TFPopupToast.m */; };
+		806AE0F7DAEAE151718712FDB2188C52 /* TFPopupExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = ACAE3B19526D7C490A195BD7EB11B696 /* TFPopupExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8570970C752DF6E50BD61A9868114B86 /* LEEAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C73DECC837E12122543ED3843345CE0 /* LEEAlert.m */; };
+		86BD715BA7A28B1C72212F3239D2E5E8 /* TFPopupExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E8F6E551E0CC3C83AF5DAE5BBCC81665 /* TFPopupExtension.m */; };
+		8B521E0D9EA187A04A74187C76265C8B /* TFPopupToast.h in Headers */ = {isa = PBXBuildFile; fileRef = F826F65119D1D9EA6782EA88732F38F3 /* TFPopupToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BC8482CA2BD34891C179729388A4787 /* SwiftPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DC261CD47116B410A1ABACCBA60736 /* SwiftPriorityQueue.swift */; };
+		8E78ECEF44BA73F7B043B292DBA669F9 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90BA72486199D1C7F9F467176E6CC5FE /* TFPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = F2784D4E7B9775EFBEA8ECB087C8593C /* TFPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9607C99330A5111093A71348468ED64A /* TFPopup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B789E7BAD28262548E96F2DA9F7D60 /* TFPopup-dummy.m */; };
+		9F40969D326750621620D8548D86467A /* SwiftPriorityQueue-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E15B71F897A7EF41112EFBC55E2283E6 /* SwiftPriorityQueue-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA7973573088CBED9F141C18A9CDAF73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		ABC7BA44A29A0A78459F8FCE834A4AD4 /* TFPopupParam.m in Sources */ = {isa = PBXBuildFile; fileRef = E09FD5B35268C19D5D4D4A33BFFD6F4A /* TFPopupParam.m */; };
+		B43CB67CB760EBBFF0FC7BEEA06244FE /* TFPopupConst.h in Headers */ = {isa = PBXBuildFile; fileRef = D99E2C7B35B9396B874C670892664C38 /* TFPopupConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8EEC012E40C2069F4AAB130CC04DD09 /* SwiftPriorityQueue-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A0E4AE394D8CCD7D9EB94595A6C615 /* SwiftPriorityQueue-dummy.m */; };
+		BD46DBA1A0D5015E99C46D95CE31BA2F /* UIView+TFPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = EC273FDF88677638330047ACE04599E0 /* UIView+TFPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C186BC1AB9C612E03FC049ED5F824D61 /* TFPopupLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = B90ECF76D958E37786837B285BE8AEEA /* TFPopupLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59D891B77297826ADAA32484E879618 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C7C80A5292F2CD845D640AC7EC6648FC /* TFPopupParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C37933B41A8755CE95FCEE24918E8A8 /* TFPopupParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8ADC76A825A2F5C219D3CF840CE037A /* NSObject+TFPopupMethodExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 71939A7DA9ED7C243090AF4AC49DB2D3 /* NSObject+TFPopupMethodExchange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0BED6419D94584A8F13B5B334CC5497 /* LEEAlert-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AAAFE22E9DB307CD1962013006BCCF /* LEEAlert-dummy.m */; };
+		FBB186BAB6FC4560D2035D5105C4EE2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0F8BCF2F18088D5BE5A948E7949F92ED /* PBXContainerItemProxy */ = {
+		5B178D313C157EF8BA9E685FD4762948 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2170CD3997E99A2AFC367C3952FEE166;
 			remoteInfo = SwiftPriorityQueue;
 		};
+		7F71E22E384F5CCBE006F1346CA67BBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 770223F7EB5D2D7BCA5C04A363D61AED;
+			remoteInfo = TFPopup;
+		};
+		D56F7A36B1C4866F1690DC3F1CFCE653 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB82DD67A83443A7049EFBD9BF2F4DAB;
+			remoteInfo = LEEAlert;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		048ACF2071EFDC5A98DFB40A67621DDB /* TFPopup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TFPopup-Info.plist"; sourceTree = "<group>"; };
 		0A637ECB756690F1808FC28285A938E7 /* SwiftPriorityQueue */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftPriorityQueue; path = SwiftPriorityQueue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D16125909A01B978C1E9DF8AF0CEA45 /* SwiftPriorityQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftPriorityQueue.modulemap; sourceTree = "<group>"; };
+		126D2F0B1C83502479DF3957BAA2FEB2 /* LEEAlertHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEEAlertHelper.h; path = LEEAlert/LEEAlertHelper.h; sourceTree = "<group>"; };
+		1560AAA25BE4BD8DF0CEE85A188B19C3 /* UIScrollView+TFPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TFPopup.m"; path = "TFPopup/UIScrollView+TFPopup.m"; sourceTree = "<group>"; };
+		16427E92326DD9D7A544B4EC641BBCB1 /* LEEAlert */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LEEAlert; path = LEEAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16F059CC93EBAA9AA863ADBE76480BF2 /* NSObject+TFPopupMethodExchange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+TFPopupMethodExchange.m"; path = "TFPopup/NSObject+TFPopupMethodExchange.m"; sourceTree = "<group>"; };
+		1904E052DD538FAE183270E6BF5C93CE /* TFPopup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFPopup.release.xcconfig; sourceTree = "<group>"; };
+		1C37933B41A8755CE95FCEE24918E8A8 /* TFPopupParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFPopupParam.h; path = TFPopup/TFPopupParam.h; sourceTree = "<group>"; };
 		1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Example"; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AAAFE22E9DB307CD1962013006BCCF /* LEEAlert-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LEEAlert-dummy.m"; sourceTree = "<group>"; };
 		243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		30A2FD0F4D63B208321A694036B73D3D /* SwiftPriorityQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftPriorityQueue-dummy.m"; sourceTree = "<group>"; };
+		268797D0A05BA3A3EE3A33FDA6E93030 /* LEEAlert-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEEAlert-umbrella.h"; sourceTree = "<group>"; };
 		31C1D37707DFAA5E6A164BCC07834264 /* Pods-Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-Info.plist"; sourceTree = "<group>"; };
 		35C305D3797C284E6F5BAA1D3E6F9BF8 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
+		3950E57638DD457E29C1E0ADCD9F159C /* UIScrollView+TFPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TFPopup.h"; path = "TFPopup/UIScrollView+TFPopup.h"; sourceTree = "<group>"; };
 		441854E35F81731E63E53DC7E4EEAD9D /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		64DEF504364863E0558F7F40BDB09B82 /* SwiftPriorityQueue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPriorityQueue.debug.xcconfig; sourceTree = "<group>"; };
-		6F1A4ECBE901463EC7CC5011C685D1AF /* SwiftPriorityQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPriorityQueue-prefix.pch"; sourceTree = "<group>"; };
+		4D1EA8C57E47EC8D2A8A159478310EBD /* TFPopupLoading.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFPopupLoading.m; path = TFPopup/TFPopupLoading.m; sourceTree = "<group>"; };
+		67D852E21D339AF9E45221BD970F4C0D /* LEEAlert.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LEEAlert.modulemap; sourceTree = "<group>"; };
+		6A12F90FD7C046257FE65F73ABC56E77 /* SwiftPriorityQueue-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPriorityQueue-prefix.pch"; sourceTree = "<group>"; };
+		6F7A6E8BCA0C82832D77B3BBAB9291CA /* LEEAlert-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEEAlert-prefix.pch"; sourceTree = "<group>"; };
+		702017CE9698386108A4BFBD4F64DF2A /* TFPopup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFPopup.debug.xcconfig; sourceTree = "<group>"; };
+		71939A7DA9ED7C243090AF4AC49DB2D3 /* NSObject+TFPopupMethodExchange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+TFPopupMethodExchange.h"; path = "TFPopup/NSObject+TFPopupMethodExchange.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7825A90E082A1582EB16256B0E722B3F /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA18B2A65C133CC65E227B45AA92FFD9 /* SwiftPriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftPriorityQueue.swift; path = Sources/SwiftPriorityQueue/SwiftPriorityQueue.swift; sourceTree = "<group>"; };
+		7AF494E8B5E11595862A90F53433B302 /* LEEAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LEEAlert.release.xcconfig; sourceTree = "<group>"; };
+		82961EA642DF670B7F54C5FE319E37A6 /* TFPopup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TFPopup.modulemap; sourceTree = "<group>"; };
+		8C73DECC837E12122543ED3843345CE0 /* LEEAlert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LEEAlert.m; path = LEEAlert/LEEAlert.m; sourceTree = "<group>"; };
+		940F5286675D20F580CAD4EC2572F487 /* SwiftPriorityQueue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPriorityQueue.debug.xcconfig; sourceTree = "<group>"; };
+		9CCA2C1C8CBCB29CE6347F27A84FAA16 /* TFPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7D76077C557DEEFBB6B1953B4FF2EB4 /* UIView+TFPopup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TFPopup.m"; path = "TFPopup/UIView+TFPopup.m"; sourceTree = "<group>"; };
+		AB7F882AD5DF1B418510B8BDF49C11B7 /* LEEAlert-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LEEAlert-Info.plist"; sourceTree = "<group>"; };
+		AC8E50AA18908349FB68EB2A62B8FCD8 /* SwiftPriorityQueue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPriorityQueue.release.xcconfig; sourceTree = "<group>"; };
+		ACAE3B19526D7C490A195BD7EB11B696 /* TFPopupExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFPopupExtension.h; path = TFPopup/TFPopupExtension.h; sourceTree = "<group>"; };
 		AFECBC24E09D0D25F822C27BD944AFD4 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
+		B00129950C110FF5E37F5A872C6D2181 /* TFPopup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFPopup-umbrella.h"; sourceTree = "<group>"; };
 		B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A0E4AE394D8CCD7D9EB94595A6C615 /* SwiftPriorityQueue-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftPriorityQueue-dummy.m"; sourceTree = "<group>"; };
+		B90ECF76D958E37786837B285BE8AEEA /* TFPopupLoading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFPopupLoading.h; path = TFPopup/TFPopupLoading.h; sourceTree = "<group>"; };
+		C5B789E7BAD28262548E96F2DA9F7D60 /* TFPopup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFPopup-dummy.m"; sourceTree = "<group>"; };
+		CAF9277AC66B5981D7F20EDBC36E3EF0 /* LEEAlert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEEAlert.h; path = LEEAlert/LEEAlert.h; sourceTree = "<group>"; };
+		CB538E21A83B3DE67222E7386ED26BE5 /* TFPopup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFPopup-prefix.pch"; sourceTree = "<group>"; };
+		CC8EA72B57ABA239E0A347BAF0B985C7 /* LEEAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LEEAlert.debug.xcconfig; sourceTree = "<group>"; };
+		D49C53B64C49905E4256A027EC09AD58 /* TFPopupToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFPopupToast.m; path = TFPopup/TFPopupToast.m; sourceTree = "<group>"; };
 		D6D7C498FA339E02BD53ECB8916CEA8E /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
-		E73EB03CAD6905AC5E19F5DAFDC9A7EF /* SwiftPriorityQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPriorityQueue-umbrella.h"; sourceTree = "<group>"; };
+		D81EE9363A9EB2C84E635017DFED4E27 /* SwiftPriorityQueue-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftPriorityQueue-Info.plist"; sourceTree = "<group>"; };
+		D99E2C7B35B9396B874C670892664C38 /* TFPopupConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFPopupConst.h; path = TFPopup/TFPopupConst.h; sourceTree = "<group>"; };
+		E09FD5B35268C19D5D4D4A33BFFD6F4A /* TFPopupParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFPopupParam.m; path = TFPopup/TFPopupParam.m; sourceTree = "<group>"; };
+		E15B71F897A7EF41112EFBC55E2283E6 /* SwiftPriorityQueue-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftPriorityQueue-umbrella.h"; sourceTree = "<group>"; };
+		E8F6E551E0CC3C83AF5DAE5BBCC81665 /* TFPopupExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TFPopupExtension.m; path = TFPopup/TFPopupExtension.m; sourceTree = "<group>"; };
 		EA21B344259B58996DB73382B1B1521F /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F06DEEE9EC12623DF3DD8B3FC1CE5DB7 /* SwiftPriorityQueue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftPriorityQueue.release.xcconfig; sourceTree = "<group>"; };
-		FC93546C529DDC228E3BE53C5C7C609C /* SwiftPriorityQueue-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftPriorityQueue-Info.plist"; sourceTree = "<group>"; };
+		EC273FDF88677638330047ACE04599E0 /* UIView+TFPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TFPopup.h"; path = "TFPopup/UIView+TFPopup.h"; sourceTree = "<group>"; };
+		F2784D4E7B9775EFBEA8ECB087C8593C /* TFPopup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFPopup.h; path = TFPopup/TFPopup.h; sourceTree = "<group>"; };
+		F7ED21AA1D678C5BB7C2343CD3115AC0 /* SwiftPriorityQueue.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftPriorityQueue.modulemap; sourceTree = "<group>"; };
+		F826F65119D1D9EA6782EA88732F38F3 /* TFPopupToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TFPopupToast.h; path = TFPopup/TFPopupToast.h; sourceTree = "<group>"; };
+		F8DC261CD47116B410A1ABACCBA60736 /* SwiftPriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftPriorityQueue.swift; path = Sources/SwiftPriorityQueue/SwiftPriorityQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E5A6B534C63F7C862415AFCA21467C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C59D891B77297826ADAA32484E879618 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DDB05B882E139AFA873C0E776ED4224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBB186BAB6FC4560D2035D5105C4EE2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663EB6437F14ABE7EB7769CCDD13F078 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,30 +149,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F38A02D9F116F4066770D8B1FB1FF4D9 /* Frameworks */ = {
+		D0473B5DDE91976DB4E7D78CD6B005D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC3FCD22676CF1453D722C98B42335F /* Foundation.framework in Frameworks */,
+				AA7973573088CBED9F141C18A9CDAF73 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		361C3B191B7C5061C2D5D88CA15BA04A /* Support Files */ = {
+		28F46B53B7977CFD80994D2249362707 /* LEEAlert */ = {
 			isa = PBXGroup;
 			children = (
-				0D16125909A01B978C1E9DF8AF0CEA45 /* SwiftPriorityQueue.modulemap */,
-				30A2FD0F4D63B208321A694036B73D3D /* SwiftPriorityQueue-dummy.m */,
-				FC93546C529DDC228E3BE53C5C7C609C /* SwiftPriorityQueue-Info.plist */,
-				6F1A4ECBE901463EC7CC5011C685D1AF /* SwiftPriorityQueue-prefix.pch */,
-				E73EB03CAD6905AC5E19F5DAFDC9A7EF /* SwiftPriorityQueue-umbrella.h */,
-				64DEF504364863E0558F7F40BDB09B82 /* SwiftPriorityQueue.debug.xcconfig */,
-				F06DEEE9EC12623DF3DD8B3FC1CE5DB7 /* SwiftPriorityQueue.release.xcconfig */,
+				CAF9277AC66B5981D7F20EDBC36E3EF0 /* LEEAlert.h */,
+				8C73DECC837E12122543ED3843345CE0 /* LEEAlert.m */,
+				126D2F0B1C83502479DF3957BAA2FEB2 /* LEEAlertHelper.h */,
+				4E86A4C154337F9652480D7139CE9115 /* Support Files */,
+			);
+			path = LEEAlert;
+			sourceTree = "<group>";
+		};
+		309639F3353E5E4EB9DD5C8FB7038EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16427E92326DD9D7A544B4EC641BBCB1 /* LEEAlert */,
+				1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */,
+				0A637ECB756690F1808FC28285A938E7 /* SwiftPriorityQueue */,
+				9CCA2C1C8CBCB29CE6347F27A84FAA16 /* TFPopup.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E86A4C154337F9652480D7139CE9115 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67D852E21D339AF9E45221BD970F4C0D /* LEEAlert.modulemap */,
+				21AAAFE22E9DB307CD1962013006BCCF /* LEEAlert-dummy.m */,
+				AB7F882AD5DF1B418510B8BDF49C11B7 /* LEEAlert-Info.plist */,
+				6F7A6E8BCA0C82832D77B3BBAB9291CA /* LEEAlert-prefix.pch */,
+				268797D0A05BA3A3EE3A33FDA6E93030 /* LEEAlert-umbrella.h */,
+				CC8EA72B57ABA239E0A347BAF0B985C7 /* LEEAlert.debug.xcconfig */,
+				7AF494E8B5E11595862A90F53433B302 /* LEEAlert.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftPriorityQueue";
+			path = "../Target Support Files/LEEAlert";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -93,13 +205,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6D29B5D0C70AC2384F363E3A02F55443 /* Products */ = {
+		68A5A8057EDD5FDEA8ED610CDBF62DB2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F667CC0E19EAF34E5A4119E2121F585 /* Pods-Example */,
-				0A637ECB756690F1808FC28285A938E7 /* SwiftPriorityQueue */,
+				82961EA642DF670B7F54C5FE319E37A6 /* TFPopup.modulemap */,
+				C5B789E7BAD28262548E96F2DA9F7D60 /* TFPopup-dummy.m */,
+				048ACF2071EFDC5A98DFB40A67621DDB /* TFPopup-Info.plist */,
+				CB538E21A83B3DE67222E7386ED26BE5 /* TFPopup-prefix.pch */,
+				B00129950C110FF5E37F5A872C6D2181 /* TFPopup-umbrella.h */,
+				702017CE9698386108A4BFBD4F64DF2A /* TFPopup.debug.xcconfig */,
+				1904E052DD538FAE183270E6BF5C93CE /* TFPopup.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/TFPopup";
+			sourceTree = "<group>";
+		};
+		71DA37E8415E3B1B7CDF0EA0C6DB59CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7ED21AA1D678C5BB7C2343CD3115AC0 /* SwiftPriorityQueue.modulemap */,
+				B8A0E4AE394D8CCD7D9EB94595A6C615 /* SwiftPriorityQueue-dummy.m */,
+				D81EE9363A9EB2C84E635017DFED4E27 /* SwiftPriorityQueue-Info.plist */,
+				6A12F90FD7C046257FE65F73ABC56E77 /* SwiftPriorityQueue-prefix.pch */,
+				E15B71F897A7EF41112EFBC55E2283E6 /* SwiftPriorityQueue-umbrella.h */,
+				940F5286675D20F580CAD4EC2572F487 /* SwiftPriorityQueue.debug.xcconfig */,
+				AC8E50AA18908349FB68EB2A62B8FCD8 /* SwiftPriorityQueue.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftPriorityQueue";
 			sourceTree = "<group>";
 		};
 		9BDBD95ED116334D1B2835202D8D3060 /* Pods-Example */ = {
@@ -127,13 +260,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CE7C852A50B64734C12C297FDEA507BB /* TFPopup */ = {
+			isa = PBXGroup;
+			children = (
+				71939A7DA9ED7C243090AF4AC49DB2D3 /* NSObject+TFPopupMethodExchange.h */,
+				16F059CC93EBAA9AA863ADBE76480BF2 /* NSObject+TFPopupMethodExchange.m */,
+				F2784D4E7B9775EFBEA8ECB087C8593C /* TFPopup.h */,
+				D99E2C7B35B9396B874C670892664C38 /* TFPopupConst.h */,
+				ACAE3B19526D7C490A195BD7EB11B696 /* TFPopupExtension.h */,
+				E8F6E551E0CC3C83AF5DAE5BBCC81665 /* TFPopupExtension.m */,
+				B90ECF76D958E37786837B285BE8AEEA /* TFPopupLoading.h */,
+				4D1EA8C57E47EC8D2A8A159478310EBD /* TFPopupLoading.m */,
+				1C37933B41A8755CE95FCEE24918E8A8 /* TFPopupParam.h */,
+				E09FD5B35268C19D5D4D4A33BFFD6F4A /* TFPopupParam.m */,
+				F826F65119D1D9EA6782EA88732F38F3 /* TFPopupToast.h */,
+				D49C53B64C49905E4256A027EC09AD58 /* TFPopupToast.m */,
+				3950E57638DD457E29C1E0ADCD9F159C /* UIScrollView+TFPopup.h */,
+				1560AAA25BE4BD8DF0CEE85A188B19C3 /* UIScrollView+TFPopup.m */,
+				EC273FDF88677638330047ACE04599E0 /* UIView+TFPopup.h */,
+				A7D76077C557DEEFBB6B1953B4FF2EB4 /* UIView+TFPopup.m */,
+				68A5A8057EDD5FDEA8ED610CDBF62DB2 /* Support Files */,
+			);
+			path = TFPopup;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DE125A947579E84EFF61569FD05422F4 /* Pods */,
-				6D29B5D0C70AC2384F363E3A02F55443 /* Products */,
+				D611793C5C91586F7EE5CA5ED6FF7C1A /* Pods */,
+				309639F3353E5E4EB9DD5C8FB7038EC6 /* Products */,
 				CE2E825F08D3AD0FD76E6D78D7512ED0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -146,21 +303,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE125A947579E84EFF61569FD05422F4 /* Pods */ = {
+		D611793C5C91586F7EE5CA5ED6FF7C1A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F33FB3A6760733F124B618115A90093F /* SwiftPriorityQueue */,
+				28F46B53B7977CFD80994D2249362707 /* LEEAlert */,
+				F3B6C7D79538424B0CB649BC8C69F844 /* SwiftPriorityQueue */,
+				CE7C852A50B64734C12C297FDEA507BB /* TFPopup */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F33FB3A6760733F124B618115A90093F /* SwiftPriorityQueue */ = {
+		F3B6C7D79538424B0CB649BC8C69F844 /* SwiftPriorityQueue */ = {
 			isa = PBXGroup;
 			children = (
-				AA18B2A65C133CC65E227B45AA92FFD9 /* SwiftPriorityQueue.swift */,
-				361C3B191B7C5061C2D5D88CA15BA04A /* Support Files */,
+				F8DC261CD47116B410A1ABACCBA60736 /* SwiftPriorityQueue.swift */,
+				71DA37E8415E3B1B7CDF0EA0C6DB59CB /* Support Files */,
 			);
-			name = SwiftPriorityQueue;
 			path = SwiftPriorityQueue;
 			sourceTree = "<group>";
 		};
@@ -175,11 +333,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A7AC7F7791D632BEA152A30AE332FE4 /* Headers */ = {
+		32E1999A8A8A49A35A28F13C8C5A372B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				276DEEF0DC5CE9D19A6C75E4261058AE /* Pods-Example-umbrella.h in Headers */,
+				D8ADC76A825A2F5C219D3CF840CE037A /* NSObject+TFPopupMethodExchange.h in Headers */,
+				90BA72486199D1C7F9F467176E6CC5FE /* TFPopup.h in Headers */,
+				37584CE3C6A8138D045C5D5C624268C6 /* TFPopup-umbrella.h in Headers */,
+				B43CB67CB760EBBFF0FC7BEEA06244FE /* TFPopupConst.h in Headers */,
+				806AE0F7DAEAE151718712FDB2188C52 /* TFPopupExtension.h in Headers */,
+				C186BC1AB9C612E03FC049ED5F824D61 /* TFPopupLoading.h in Headers */,
+				C7C80A5292F2CD845D640AC7EC6648FC /* TFPopupParam.h in Headers */,
+				8B521E0D9EA187A04A74187C76265C8B /* TFPopupToast.h in Headers */,
+				09847024AE86D7B5834112F15091208D /* UIScrollView+TFPopup.h in Headers */,
+				BD46DBA1A0D5015E99C46D95CE31BA2F /* UIView+TFPopup.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB91F84FCEBF00FC62CA0858C831DE1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122C9322447D0148CCCE2AB41B832747 /* LEEAlert.h in Headers */,
+				68DDB27DBEC64B374745C6E9867E7921 /* LEEAlert-umbrella.h in Headers */,
+				6A512FCB6B790A1D17F513CA96CDF0B6 /* LEEAlertHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEB4CDA00EBEBD70B19514110904DBDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E78ECEF44BA73F7B043B292DBA669F9 /* Pods-Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,17 +373,19 @@
 /* Begin PBXNativeTarget section */
 		0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84809023BBD54296F19031559A53FC74 /* Build configuration list for PBXNativeTarget "Pods-Example" */;
+			buildConfigurationList = 55F5CD72B7E54F0785204F8E638A9DAF /* Build configuration list for PBXNativeTarget "Pods-Example" */;
 			buildPhases = (
-				4A7AC7F7791D632BEA152A30AE332FE4 /* Headers */,
-				3919907B3AC06FFA1BB0B88AB9E29766 /* Sources */,
-				F38A02D9F116F4066770D8B1FB1FF4D9 /* Frameworks */,
-				9A5663F98D3E9ECADCB94C84C576D6E6 /* Resources */,
+				FEB4CDA00EBEBD70B19514110904DBDB /* Headers */,
+				6B7171FE0AC73A3B34806330D0F27A0A /* Sources */,
+				2DDB05B882E139AFA873C0E776ED4224 /* Frameworks */,
+				71A9FBB07CB28A3CFA8C558A46E46989 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C7F5B6460F0344841BF190669957A382 /* PBXTargetDependency */,
+				465C7DB85AF86B37A1BB8F5720826BA8 /* PBXTargetDependency */,
+				F41AA6023C8E78D72C8FC4891598B7C4 /* PBXTargetDependency */,
+				1E5EDB61C8F86AD1BDCEC4BBA78C42C8 /* PBXTargetDependency */,
 			);
 			name = "Pods-Example";
 			productName = Pods_Example;
@@ -223,6 +410,42 @@
 			productReference = 0A637ECB756690F1808FC28285A938E7 /* SwiftPriorityQueue */;
 			productType = "com.apple.product-type.framework";
 		};
+		770223F7EB5D2D7BCA5C04A363D61AED /* TFPopup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4638B4218FD9615AB3B430ADC01192F2 /* Build configuration list for PBXNativeTarget "TFPopup" */;
+			buildPhases = (
+				32E1999A8A8A49A35A28F13C8C5A372B /* Headers */,
+				5BEDF2B4D63C9132045B289CEE417E65 /* Sources */,
+				1E5A6B534C63F7C862415AFCA21467C5 /* Frameworks */,
+				7A9A7271CFEC2C9D210DE759D9023849 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TFPopup;
+			productName = TFPopup;
+			productReference = 9CCA2C1C8CBCB29CE6347F27A84FAA16 /* TFPopup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB82DD67A83443A7049EFBD9BF2F4DAB /* LEEAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D5581A182AF717962BBC481F08D363 /* Build configuration list for PBXNativeTarget "LEEAlert" */;
+			buildPhases = (
+				FB91F84FCEBF00FC62CA0858C831DE1D /* Headers */,
+				9CC1F54844DF733DAE7E1FD44FDDCA6A /* Sources */,
+				D0473B5DDE91976DB4E7D78CD6B005D5 /* Frameworks */,
+				7F1DBDF8C0188C29C536AD66610BB3C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LEEAlert;
+			productName = LEEAlert;
+			productReference = 16427E92326DD9D7A544B4EC641BBCB1 /* LEEAlert */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -233,7 +456,7 @@
 				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -241,18 +464,34 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 6D29B5D0C70AC2384F363E3A02F55443 /* Products */;
+			productRefGroup = 309639F3353E5E4EB9DD5C8FB7038EC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EB82DD67A83443A7049EFBD9BF2F4DAB /* LEEAlert */,
 				0AEE99A309977BD12A049FF48AF9BA4B /* Pods-Example */,
 				2170CD3997E99A2AFC367C3952FEE166 /* SwiftPriorityQueue */,
+				770223F7EB5D2D7BCA5C04A363D61AED /* TFPopup */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9A5663F98D3E9ECADCB94C84C576D6E6 /* Resources */ = {
+		71A9FBB07CB28A3CFA8C558A46E46989 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A9A7271CFEC2C9D210DE759D9023849 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F1DBDF8C0188C29C536AD66610BB3C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,30 +517,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3919907B3AC06FFA1BB0B88AB9E29766 /* Sources */ = {
+		5BEDF2B4D63C9132045B289CEE417E65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0357C3596382C54BE77C998C21ABDF9F /* Pods-Example-dummy.m in Sources */,
+				0284E6DC5B99FE381D69641A97227DDF /* NSObject+TFPopupMethodExchange.m in Sources */,
+				9607C99330A5111093A71348468ED64A /* TFPopup-dummy.m in Sources */,
+				86BD715BA7A28B1C72212F3239D2E5E8 /* TFPopupExtension.m in Sources */,
+				22650B3B51AED997CF617DAD09B9C002 /* TFPopupLoading.m in Sources */,
+				ABC7BA44A29A0A78459F8FCE834A4AD4 /* TFPopupParam.m in Sources */,
+				805F52CB727CDD64497668770A5E32F5 /* TFPopupToast.m in Sources */,
+				38C03330C7AF8AEFB76CFC8B0276CBF8 /* UIScrollView+TFPopup.m in Sources */,
+				7B6FBBE56654E511D493C802E0B4245A /* UIView+TFPopup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B7171FE0AC73A3B34806330D0F27A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C630A4CCDA4E3A78157BE4C7B0C6E3 /* Pods-Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CC1F54844DF733DAE7E1FD44FDDCA6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8570970C752DF6E50BD61A9868114B86 /* LEEAlert.m in Sources */,
+				E0BED6419D94584A8F13B5B334CC5497 /* LEEAlert-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C7F5B6460F0344841BF190669957A382 /* PBXTargetDependency */ = {
+		1E5EDB61C8F86AD1BDCEC4BBA78C42C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TFPopup;
+			target = 770223F7EB5D2D7BCA5C04A363D61AED /* TFPopup */;
+			targetProxy = 7F71E22E384F5CCBE006F1346CA67BBC /* PBXContainerItemProxy */;
+		};
+		465C7DB85AF86B37A1BB8F5720826BA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LEEAlert;
+			target = EB82DD67A83443A7049EFBD9BF2F4DAB /* LEEAlert */;
+			targetProxy = D56F7A36B1C4866F1690DC3F1CFCE653 /* PBXContainerItemProxy */;
+		};
+		F41AA6023C8E78D72C8FC4891598B7C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftPriorityQueue;
 			target = 2170CD3997E99A2AFC367C3952FEE166 /* SwiftPriorityQueue */;
-			targetProxy = 0F8BCF2F18088D5BE5A948E7949F92ED /* PBXContainerItemProxy */;
+			targetProxy = 5B178D313C157EF8BA9E685FD4762948 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		49F517197489B99C1878B1F331CAAED8 /* Release */ = {
+		0AAE1E341F474C6032079D2252D4B4DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F06DEEE9EC12623DF3DD8B3FC1CE5DB7 /* SwiftPriorityQueue.release.xcconfig */;
+			baseConfigurationReference = B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -311,30 +587,30 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftPriorityQueue/SwiftPriorityQueue-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftPriorityQueue/SwiftPriorityQueue-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SwiftPriorityQueue/SwiftPriorityQueue.modulemap";
-				PRODUCT_MODULE_NAME = SwiftPriorityQueue;
-				PRODUCT_NAME = SwiftPriorityQueue;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		4AB91F3C882903AF896DC117266CF039 /* Release */ = {
+		1291295CC8B89F615049949671488921 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 243410B9535472556EA4BB6DBC133A0D /* Pods-Example.release.xcconfig */;
 			buildSettings = {
@@ -372,11 +648,10 @@
 			};
 			name = Release;
 		};
-		4DC48A071C7A347EAFA22CD8849B63F7 /* Debug */ = {
+		49F517197489B99C1878B1F331CAAED8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B45138496B85A072654D1D0F8EBBEDE5 /* Pods-Example.debug.xcconfig */;
+			baseConfigurationReference = AC8E50AA18908349FB68EB2A62B8FCD8 /* SwiftPriorityQueue.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -386,28 +661,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Example/Pods-Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftPriorityQueue/SwiftPriorityQueue-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftPriorityQueue/SwiftPriorityQueue-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Example/Pods-Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/SwiftPriorityQueue/SwiftPriorityQueue.modulemap";
+				PRODUCT_MODULE_NAME = SwiftPriorityQueue;
+				PRODUCT_NAME = SwiftPriorityQueue;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		5B82FA55F6A12DBC8196D07B0C1EEB40 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -537,9 +812,149 @@
 			};
 			name = Debug;
 		};
+		76376C2AD86DDF0535FFC278594D242B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 702017CE9698386108A4BFBD4F64DF2A /* TFPopup.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFPopup/TFPopup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFPopup/TFPopup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TFPopup/TFPopup.modulemap";
+				PRODUCT_MODULE_NAME = TFPopup;
+				PRODUCT_NAME = TFPopup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AD4B817EB3F3072B9420EBBAF3DD0C0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1904E052DD538FAE183270E6BF5C93CE /* TFPopup.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFPopup/TFPopup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFPopup/TFPopup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TFPopup/TFPopup.modulemap";
+				PRODUCT_MODULE_NAME = TFPopup;
+				PRODUCT_NAME = TFPopup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F214A5FCDD9086594C2809B64617545A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC8EA72B57ABA239E0A347BAF0B985C7 /* LEEAlert.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEEAlert/LEEAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEEAlert/LEEAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LEEAlert/LEEAlert.modulemap";
+				PRODUCT_MODULE_NAME = LEEAlert;
+				PRODUCT_NAME = LEEAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F959F43B314803483C8221CDDF787DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF494E8B5E11595862A90F53433B302 /* LEEAlert.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LEEAlert/LEEAlert-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LEEAlert/LEEAlert-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LEEAlert/LEEAlert.modulemap";
+				PRODUCT_MODULE_NAME = LEEAlert;
+				PRODUCT_NAME = LEEAlert;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FE04D866D1349BA88B92F10EF6E34D12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64DEF504364863E0558F7F40BDB09B82 /* SwiftPriorityQueue.debug.xcconfig */;
+			baseConfigurationReference = 940F5286675D20F580CAD4EC2572F487 /* SwiftPriorityQueue.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -584,6 +999,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4638B4218FD9615AB3B430ADC01192F2 /* Build configuration list for PBXNativeTarget "TFPopup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76376C2AD86DDF0535FFC278594D242B /* Debug */,
+				AD4B817EB3F3072B9420EBBAF3DD0C0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -593,11 +1017,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84809023BBD54296F19031559A53FC74 /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
+		55F5CD72B7E54F0785204F8E638A9DAF /* Build configuration list for PBXNativeTarget "Pods-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DC48A071C7A347EAFA22CD8849B63F7 /* Debug */,
-				4AB91F3C882903AF896DC117266CF039 /* Release */,
+				0AAE1E341F474C6032079D2252D4B4DD /* Debug */,
+				1291295CC8B89F615049949671488921 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D5581A182AF717962BBC481F08D363 /* Build configuration list for PBXNativeTarget "LEEAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F214A5FCDD9086594C2809B64617545A /* Debug */,
+				F959F43B314803483C8221CDDF787DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

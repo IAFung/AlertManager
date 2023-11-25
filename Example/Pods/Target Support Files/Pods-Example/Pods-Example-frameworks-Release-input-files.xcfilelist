@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/LEEAlert/LEEAlert.framework
 ${BUILT_PRODUCTS_DIR}/SwiftPriorityQueue/SwiftPriorityQueue.framework
+${BUILT_PRODUCTS_DIR}/TFPopup/TFPopup.framework

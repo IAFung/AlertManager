@@ -57,6 +57,9 @@ public enum Popup {
             return tasksInQueue
         }
         
+        /// Configuration of the Popup manager instance
+        public var configuration: Configuration = .shared
+        
         private var queue: Atomic<PriorityQueue<AnyPopupTask>> = Atomic(PriorityQueue())
         
         private var activeTask: AnyPopupTask?
@@ -80,6 +83,7 @@ public enum Popup {
             
             if let activeTask = activeTask, activeTask.priority < task.priority, !activeTask.highLevel {
                 activeTask.close {
+                    try? activeTask.base.resignFocus()
                     try? self.add(task: activeTask.base)
                 }
             } else {
@@ -238,6 +242,30 @@ extension Popup.Manager {
         prioritySet.remove(activeTask.priority)
         self.activeTask = nil
         
-        transit(to: .active)
+//        transit(to: .active)
+        breakupSubsequentPopups(with: configuration.timeInterval) {
+            self.transit(to: .active)
+        }
+
+    }
+}
+extension Popup.Manager {
+        
+    private func breakupSubsequentPopups(with timeInterval: Configuration.TimeInterval, block: @escaping () -> Void) {
+        var delay = Double(0)
+        
+        switch timeInterval {
+        case .constant(let seconds):
+            delay = seconds
+        case .random(let lower, let upper):
+            delay = Double.random(in: lower ... upper)
+        }
+        
+        guard delay != 0 else {
+            block()
+            return
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: block)
     }
 }

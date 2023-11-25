@@ -1,16 +1,24 @@
 PODS:
+  - LEEAlert (1.6.6)
   - SwiftPriorityQueue (1.4.0)
+  - TFPopup (1.4.4)
 
 DEPENDENCIES:
+  - LEEAlert
   - SwiftPriorityQueue
+  - TFPopup
 
 SPEC REPOS:
   trunk:
+    - LEEAlert
     - SwiftPriorityQueue
+    - TFPopup
 
 SPEC CHECKSUMS:
+  LEEAlert: 7c2ea10bcd6be93d6d102abe947a9ff9708c4b60
   SwiftPriorityQueue: ba43d692d8431f8aa869108b182ddc38bebeaa4f
+  TFPopup: 5787d01ff90c5fc7fe19a991df1fb160c342529a
 
-PODFILE CHECKSUM: bdf92f27d47547486cf0ca397665ca5fdac1f9bc
+PODFILE CHECKSUM: 09d6f4959d38d443cb5a15907bc507000ce822a4
 
 COCOAPODS: 1.12.1

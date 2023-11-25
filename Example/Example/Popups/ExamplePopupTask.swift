@@ -34,7 +34,6 @@ class ExamplePopupTask: PopupTask {
     
     func close(block: (() -> Void)?) {
         viewController?.dismiss(animated: true) {
-            try? self.resignFocus()
             block?()
         }
     }
@@ -42,7 +41,7 @@ class ExamplePopupTask: PopupTask {
     func render() {
         let alertViewController = UIAlertController(title: taskDescription, message: nil, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default) { _ in
-            try? self.resignFocus()
+            try? self.resignFocus() //记得调用
         }
         
         alertViewController.addAction(action)

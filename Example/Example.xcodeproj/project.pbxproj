@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		7D14927B95D81E14021FAF6D /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7793A68EB3BC0CF870C6ACC5 /* Pods_Example.framework */; };
-		848AF95A2B10420B00F22148 /* PopUpTask1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AF9592B10420B00F22148 /* PopUpTask1.swift */; };
+		848AF95A2B10420B00F22148 /* LeeAlertTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AF9592B10420B00F22148 /* LeeAlertTask.swift */; };
 		848AF95F2B10476700F22148 /* PopupTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AF95C2B10476700F22148 /* PopupTask.swift */; };
 		848AF9602B10476700F22148 /* PopupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AF95D2B10476700F22148 /* PopupManager.swift */; };
 		848AF9612B10476700F22148 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AF95E2B10476700F22148 /* Atomic.swift */; };
 		848AF9662B104B6F00F22148 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AF9652B104B6F00F22148 /* Configuration.swift */; };
+		848AF96A2B11BF4F00F22148 /* TFPopupTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848AF9692B11BF4F00F22148 /* TFPopupTask.swift */; };
 		CE7C358325BEC25B0094570C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C358225BEC25B0094570C /* AppDelegate.swift */; };
 		CE7C358525BEC25B0094570C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C358425BEC25B0094570C /* SceneDelegate.swift */; };
 		CE7C358725BEC25B0094570C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7C358625BEC25B0094570C /* ViewController.swift */; };
@@ -25,11 +26,12 @@
 /* Begin PBXFileReference section */
 		07220C855DAA11F8D424451E /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7793A68EB3BC0CF870C6ACC5 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		848AF9592B10420B00F22148 /* PopUpTask1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpTask1.swift; sourceTree = "<group>"; };
+		848AF9592B10420B00F22148 /* LeeAlertTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeeAlertTask.swift; sourceTree = "<group>"; };
 		848AF95C2B10476700F22148 /* PopupTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupTask.swift; sourceTree = "<group>"; };
 		848AF95D2B10476700F22148 /* PopupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupManager.swift; sourceTree = "<group>"; };
 		848AF95E2B10476700F22148 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		848AF9652B104B6F00F22148 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		848AF9692B11BF4F00F22148 /* TFPopupTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TFPopupTask.swift; sourceTree = "<group>"; };
 		BD185D84DF8B0C8FD52FFC2D /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		CE7C357F25BEC25B0094570C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7C358225BEC25B0094570C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				CE7C35D325BECEAE0094570C /* ExamplePopupTask.swift */,
-				848AF9592B10420B00F22148 /* PopUpTask1.swift */,
+				848AF9592B10420B00F22148 /* LeeAlertTask.swift */,
+				848AF9692B11BF4F00F22148 /* TFPopupTask.swift */,
 			);
 			path = Popups;
 			sourceTree = "<group>";
@@ -239,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848AF95A2B10420B00F22148 /* PopUpTask1.swift in Sources */,
+				848AF95A2B10420B00F22148 /* LeeAlertTask.swift in Sources */,
 				848AF9602B10476700F22148 /* PopupManager.swift in Sources */,
 				848AF95F2B10476700F22148 /* PopupTask.swift in Sources */,
 				CE7C35D425BECEAE0094570C /* ExamplePopupTask.swift in Sources */,
@@ -248,6 +251,7 @@
 				CE7C358725BEC25B0094570C /* ViewController.swift in Sources */,
 				CE7C358325BEC25B0094570C /* AppDelegate.swift in Sources */,
 				CE7C358525BEC25B0094570C /* SceneDelegate.swift in Sources */,
+				848AF96A2B11BF4F00F22148 /* TFPopupTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

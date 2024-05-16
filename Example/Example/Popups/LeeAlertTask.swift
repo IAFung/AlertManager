@@ -19,9 +19,6 @@ class LeeAlertTask: PopupTask {
     
     var isCanceled: Bool = false
     
-    var highLevel: Bool = true //不会被隐藏
-        
-    
 //    var willShowBlock: ((PopUpTask1) -> Void)?
     
     deinit {
@@ -32,22 +29,21 @@ class LeeAlertTask: PopupTask {
         self.priority = priority
         self.taskDescription = desc
     }
-    func close(block: (() -> Void)?) {
+    func close(finishCallback: (() -> Void)?) {
         LEEAlert.close(withIdentifier: "id") {
-            block?()
+            finishCallback?()
         }
     }
-    
-    func render() {
-       let alert = LEEAlert.alert()
-          _ = alert.config
-            .leeTitle("提示")
-            .leeContent(taskDescription)
-            .leeAction("确定", {
-               try? self.resignFocus() //记得调用
-            })
-            .leeIdentifier("id")
-            .leeShow()
+    func render(dismissBlock: (() -> Void)?) {
+        let alert = LEEAlert.alert()
+           _ = alert.config
+             .leeTitle("提示")
+             .leeContent(taskDescription)
+             .leeAction("确定", {
+                 dismissBlock?() //记得调用
+             })
+             .leeIdentifier("id")
+             .leeShow()
     }
 }
 

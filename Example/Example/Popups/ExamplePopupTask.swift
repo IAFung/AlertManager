@@ -32,22 +32,22 @@ class ExamplePopupTask: PopupTask {
         self.viewController = viewController
     }
     
-    func close(block: (() -> Void)?) {
+    func close(finishCallback: (() -> Void)?) {
         viewController?.dismiss(animated: true) {
-            block?()
+            finishCallback?()
         }
     }
-    
-    func render() {
+    func render(dismissBlock: (() -> Void)?) {
         let alertViewController = UIAlertController(title: taskDescription, message: nil, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default) { _ in
-            try? self.resignFocus() //记得调用
+            dismissBlock?()
         }
         
         alertViewController.addAction(action)
         
         viewController?.present(alertViewController, animated: true, completion: nil)
     }
+    
 }
 
 extension ExamplePopupTask {

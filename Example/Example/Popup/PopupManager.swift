@@ -80,11 +80,13 @@ public enum Popup {
             
             queue.mutate { $0.push(AnyPopupTask(task)) }
             print("popup manager all tasks: \(String(describing: allTasks)))")
-            
-            if let activeTask = activeTask, activeTask.priority < task.priority, !activeTask.highLevel {
-                activeTask.close {
-                    try? activeTask.base.resignFocus()
-                    try? self.add(task: activeTask.base)
+            //MARK: 当前显示的弹框优先级较低, 关闭当前弹框,重新加入任务队列,之后再显示
+            if let activeTask = activeTask, activeTask.priority < task.priority {
+                activeTask.close { [weak activeTask] in
+                    if let active = activeTask {
+                        active.base.resignFocus()
+                        try? self.add(task: active.base)
+                    }
                 }
             } else {
                 becomeActiveIfNeeded()
@@ -110,9 +112,9 @@ public enum Popup {
         
         // Capability
         
-        fileprivate func taskResignFocusAction(task: PopupTask) throws {
+        fileprivate func taskResignFocusAction(task: PopupTask)  {
             guard let activeTask = activeTask, task === activeTask.base else {
-                throw Error.finishInactiveTask
+                return
             }
             
             transit(to: .handleDismiss)
@@ -124,8 +126,8 @@ public enum Popup {
 
 public extension PopupTask {
     
-    func resignFocus() throws {
-        try self.manager?.taskResignFocusAction(task: self)
+    func resignFocus() {
+        self.manager?.taskResignFocusAction(task: self)
     }
 }
 
@@ -224,7 +226,9 @@ extension Popup.Manager {
             fatalError("transit to in progress but active task is nil")
         }
         
-        activeTask.render()
+        activeTask.render { [weak activeTask] in
+            activeTask?.resignFocus()
+        }
         activeTask.didShow()
         
         // feel free to transit to in progress, it will not cause calling-cycle

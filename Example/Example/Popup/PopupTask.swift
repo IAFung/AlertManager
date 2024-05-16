@@ -20,18 +20,15 @@ public protocol PopupTask: AnyObject, PopupTaskLifeCycle, CustomStringConvertibl
     
     /// cancel flag, if a task wants to cancel itself, it could flag `isCanceled` true during `willShow()`
     var isCanceled: Bool { get set }
-    
-    var highLevel: Bool { get } //当高优先级弹框加入队列时,是否支持先移除当前弹框,之后再弹出.
-    
-    /// 关闭当前屏幕上的弹框
-    /// 只有supportTempRemove为true时才会调用此方法
-    func close(block: (()->Void)?)
+        
+    /// 关闭当前弹框,当高优先级的弹框进入队列,会调用此方法进行移除.移除存在异步操作,添加回调
+    func close(finishCallback: (()->Void)?)
     
     /// when the user interaction is done for the popup, its responsibility is invoking to continue the loop
-    func resignFocus() throws
+    func resignFocus()
     
     /// a right place to show popup user interface, the task will not restrict the way how you show it
-    func render()
+    func render(dismissBlock: (() -> Void)?)
 }
 
 extension PopupTask {
@@ -66,14 +63,9 @@ public extension PopupTaskLifeCycle {
 /// Type erasure type for `PopupTask`
 public class AnyPopupTask: PopupTask {
     
-    public var highLevel: Bool {
-        base.highLevel
+    public func close(finishCallback: (() -> Void)?) {
+        self.base.close(finishCallback: finishCallback)
     }
-    
-    public func close(block: (() -> Void)?) {
-        self.base.close(block: block)
-    }
-    
     
     public let base: PopupTask
     
@@ -96,12 +88,12 @@ public class AnyPopupTask: PopupTask {
         set { base.isCanceled = newValue}
     }
     
-    public func resignFocus() throws {
-        try base.resignFocus()
+    public func resignFocus() {
+        base.resignFocus()
     }
     
-    public func render() {
-        base.render()
+    public func render(dismissBlock: (() -> Void)?) {
+        base.render(dismissBlock: dismissBlock)
     }
     
     // popup task life cycle

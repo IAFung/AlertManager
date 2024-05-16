@@ -23,23 +23,19 @@ class TFPopupTask: PopupTask {
         self.priority = priority
         self.viewController = viewController
     }
-    func close(block: (() -> Void)?) {
+    func close(finishCallback: (() -> Void)?) {
         UIView.tf_findPopup("id").tf_hide()
-        block?()
+        finishCallback?()
     }
-    
-    func render() {
+    func render(dismissBlock: (() -> Void)?) {
         let alertView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 350))
         alertView.identifier = "id"
         alertView.backgroundColor = .red
         alertView.tf_showNormal(self.viewController?.view, animated: true)
         alertView.tf_observerDelegateProcess { view, process in
             if process == .didHide {
-                try? self.resignFocus()  //记得调用
+                dismissBlock?()  //记得调用
             }
         }
-        
     }
-    
-    
 }
